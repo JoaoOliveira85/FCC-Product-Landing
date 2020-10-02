@@ -1,20 +1,83 @@
 #page-header {
     background-color: blue;
-    height: 24px;
+    height: auto;
     display: flex;
-    flex-direction: row;
+    align-items: flex-start;
+    padding: 5px;
+    margin: 5px;
 }
 
 #logo {
     display: flex;
+    align-self: flex-start;
     background-color: red;
-    height: 70%;
-    width: 20%;
-    padding-top: 10px;
+    height: 34px;
+    width: 250px;
+    padding: 2px;
 }
 
 #links {
     display: flex;
+    flex-direction: row;
     background-color: green;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    justify-content: space-around; 
+    padding: 2px;
+}
+
+.links {
+    background-color: yellow;
     height: 24px;
+    width: auto;
+    text-align: center;
+    margin: 5px;
+}
+
+#main-content{
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+    padding: 5px;
+    margin: 5px;
+}
+
+#newsletter {
+    display: flex;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+#bullets {
+    display: flex;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+#stories {
+    display: flex;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+#prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.products {
+    display: flex;
+    background-color: aqua;
+    margin: 5px;
+    width: 100%;
+}
+
+#footer {
+    display: flex;
+    align-items: flex-start;
+    background-color: teal;
+    padding: 5px;
+    margin: 5px;
 }
