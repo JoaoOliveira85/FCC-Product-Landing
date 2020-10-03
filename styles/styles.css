@@ -5,6 +5,7 @@
     align-items: flex-start;
     padding: 5px;
     margin: 5px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 #logo {
@@ -14,6 +15,7 @@
     height: 34px;
     width: 250px;
     padding: 2px;
+    margin: 5px auto 5px 5px;
 }
 
 #links {
@@ -22,7 +24,7 @@
     background-color: green;
     height: auto;
     width: auto;
-    margin-left: auto;
+    margin: 5px 5px 5px auto;
     justify-content: space-around; 
     padding: 2px;
 }
@@ -47,18 +49,21 @@
     display: flex;
     background-color: blueviolet;
     text-align: center;
+    margin: 5px;
 }
 
 #bullets {
     display: flex;
     background-color: blueviolet;
     text-align: center;
+    margin: 5px;
 }
 
 #stories {
     display: flex;
     background-color: blueviolet;
     text-align: center;
+    margin: 5px;
 }
 
 #prices {
@@ -80,4 +85,5 @@
     background-color: teal;
     padding: 5px;
     margin: 5px;
+    border-radius: 0px 0px 10px 10px;
 }
