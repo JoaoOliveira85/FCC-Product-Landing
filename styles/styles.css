@@ -1,4 +1,4 @@
-#page-header {
+#header {
     background-color: blue;
     height: auto;
     display: flex;
@@ -18,7 +18,14 @@
     margin: 5px auto 5px 5px;
 }
 
-#links {
+#video-frame {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#nav-bar {
     display: flex;
     flex-direction: row;
     background-color: green;
@@ -29,7 +36,7 @@
     padding: 2px;
 }
 
-.links {
+.nav-link {
     background-color: yellow;
     height: 24px;
     width: auto;
@@ -45,7 +52,7 @@
     margin: 5px;
 }
 
-#newsletter {
+#video {
     display: flex;
     background-color: blueviolet;
     text-align: center;
