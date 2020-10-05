@@ -1,3 +1,15 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
 #header {
     background-color: blue;
     height: auto;
@@ -16,13 +28,6 @@
     width: 250px;
     padding: 2px;
     margin: 5px auto 5px 5px;
-}
-
-#video-frame {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 #nav-bar {
@@ -52,35 +57,50 @@
     margin: 5px;
 }
 
-#video {
+#video-frame {
     display: flex;
-    background-color: blueviolet;
-    text-align: center;
+    background-color: aqua;
+    flex-direction: column;
     margin: 5px;
 }
 
-#bullets {
+#video {
     display: flex;
+    align-self: center;
+    margin: 5px 0px 5px 0px;
+}
+
+#products {
+    display: flex;
+    flex-direction: column;
     background-color: blueviolet;
-    text-align: center;
     margin: 5px;
 }
 
 #stories {
     display: flex;
+    flex-direction: column;
     background-color: blueviolet;
-    text-align: center;
+    margin: 5px;
+}
+
+#newsletter {
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
     margin: 5px;
 }
 
 #prices {
-    display: flex;
+    display: flex;;
     flex-direction: row;
     justify-content: space-around;
 }
 
 .products {
     display: flex;
+    flex-direction: column;
+    text-align: center;
     background-color: aqua;
     margin: 5px;
     width: 100%;
