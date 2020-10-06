@@ -1,3 +1,21 @@
+:root {
+    --bg-color: hsla(34, 100%, 70%, 0.7);
+    }
+
+body {
+    margin: 0;
+}
+
+#page-background {
+    background-image: url("https://www.flpuppiesonline.com/wp-content/uploads/sites/5/river1.jpg");
+    background-size: 100em;
+    background-attachment: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
 h1 {
     text-align: center;
 }
@@ -11,23 +29,34 @@ p {
 }
 
 #header {
-    background-color: blue;
+    position: fixed;
+    align-self: center;
+    width: 90%;
+    top: 1;
+    background-color: var(--bg-color);
     height: auto;
     display: flex;
     align-items: flex-start;
-    padding: 5px;
     margin: 5px;
     border-radius: 10px 10px 0px 0px;
 }
 
 #logo {
     display: flex;
-    align-self: flex-start;
+    flex-direction: row;
     background-color: red;
+    align-items: center;
+    font-size: 30px;
     height: 34px;
     width: 250px;
     padding: 2px;
     margin: 5px auto 5px 5px;
+}
+
+#header-img {
+    height: 34px;
+    width: 34px;
+    display: flex;
 }
 
 #nav-bar {
@@ -41,7 +70,7 @@ p {
     padding: 2px;
 }
 
-.nav-link {
+.nav-bg {
     background-color: yellow;
     height: 24px;
     width: auto;
@@ -52,16 +81,10 @@ p {
 #main-content{
     display: flex;
     flex-direction: column;
-    background-color: orange;
-    padding: 5px;
+    align-self: center;
+    padding: 50px 5px 5px 5px;
     margin: 5px;
-}
-
-#video-frame {
-    display: flex;
-    background-color: aqua;
-    flex-direction: column;
-    margin: 5px;
+    width: 90%;
 }
 
 #video {
@@ -70,25 +93,12 @@ p {
     margin: 5px 0px 5px 0px;
 }
 
-#products {
+.content-block {
     display: flex;
     flex-direction: column;
-    background-color: blueviolet;
-    margin: 5px;
-}
-
-#stories {
-    display: flex;
-    flex-direction: column;
-    background-color: blueviolet;
-    margin: 5px;
-}
-
-#newsletter {
-    display: flex;
-    flex-direction: column;
-    background-color: blueviolet;
-    margin: 5px;
+    background-color: var(--bg-color);
+    margin: 5px 0px 5px 0px;
+    padding: 0px 10px 0px 10px;
 }
 
 #prices {
@@ -101,7 +111,7 @@ p {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: aqua;
+    background-color: var(--bg-color);
     margin: 5px;
     width: 100%;
 }
@@ -109,8 +119,35 @@ p {
 #footer {
     display: flex;
     align-items: flex-start;
-    background-color: teal;
+    background-color: var(--bg-color);
     padding: 5px;
-    margin: 5px;
+    margin: 5px 0px 5px 0px;
     border-radius: 0px 0px 10px 10px;
+}
+
+#form-label {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 5px;
+}
+
+#email {
+    display: flex;
+    align-self: center;
+}
+
+@media (max-width: 685px){
+    #header {
+        width: 685px;
+    }
+
+    #main-content {
+        width: 685px;
+    }
 }
